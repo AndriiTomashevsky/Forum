@@ -20,14 +20,10 @@ namespace Repository
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            //new TopicMap(modelBuilder.Entity<Topic>());
-            //new MessageMap(modelBuilder.Entity<Message>());
-            //new UserAssetMap(modelBuilder.Entity<UserAsset>());
 
             modelBuilder.Entity<Topic>().ToTable("Topic");
             modelBuilder.Entity<Message>().ToTable("Message");
             modelBuilder.Entity<User>().ToTable("User");
-            //modelBuilder.Entity<UserAsset>().ToTable("UserAsset");
         }
     }
 }

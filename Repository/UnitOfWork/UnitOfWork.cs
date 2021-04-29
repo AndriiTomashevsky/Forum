@@ -62,9 +62,5 @@ namespace Repository
             }
         }
 
-        public IRepository<T> GetRepository<T>() where T : BaseEntity
-        {
-            throw new NotImplementedException();
-        }
     }
 }

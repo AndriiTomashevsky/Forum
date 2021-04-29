@@ -9,5 +9,6 @@ namespace Repository
     {
         TopicRepository Topics { get; }
         Repository<Message> Messages { get; }
+        void SaveChanges();
     }
 }
